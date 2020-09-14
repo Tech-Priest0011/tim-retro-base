@@ -1,9 +1,5 @@
-
-
-
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
-
 
 
 // SETTINGS
@@ -12,12 +8,9 @@
 @import "settings/spacing";
 @import "settings/font";
 
-
 // GENERIC
 // Permet de réinitialiser les CSS et de changer le modèle de boîte en box-sizing: border-box
 @import "generic/reset";
-
-
 
 // ELEMENTS
 // Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
@@ -37,22 +30,4 @@
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
-
-
-//---------------------------------------------
-//---------------- Elements ----------------------*/
-
-
-
-
-
-/*---------------------- Components ----------------------*/
-
-
-
-
-
-
-
-
 
