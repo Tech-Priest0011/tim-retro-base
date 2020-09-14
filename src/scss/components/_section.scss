@@ -1,0 +1,37 @@
+section.interet{
+  background-image: url("../images/bg-interet.jpg");
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.interet div.conteneur{
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.citation{
+  background-image: url("../images/bg-citation.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+  height:450px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+
+}
+
+section.citation div.conteneur{
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section.citation h3{
+  text-transform: uppercase;
+}

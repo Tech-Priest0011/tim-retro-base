@@ -8,235 +8,51 @@
 
 // SETTINGS
 // Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
-
-
+@import "settings/color";
+@import "settings/spacing";
+@import "settings/font";
 
 
 // GENERIC
 // Permet de réinitialiser les CSS et de changer le modèle de boîte en box-sizing: border-box
-
+@import "generic/reset";
 
 
 
 // ELEMENTS
 // Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
-
-
+@import "elements/body";
+@import "elements/links";
+@import "elements/titles";
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
-
-
-
+@import "components/div";
+@import "components/footer";
+@import "components/header";
+@import "components/hero";
+@import "components/paragraphe";
+@import "components/section";
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
 
 
 //---------------------------------------------
-/*---------------------- Settings ----------------------*/
+//---------------- Elements ----------------------*/
 
-/* LES VARIABLES CSS ICI */
-:root{
-  --font-primary: 'Cardo', serif;
-  --font-secondary: 'Bungee Shade', cursive;
 
-  --black: #000;
-  --white: #fff;
-  --color-primary: #a7029a;
-  --color-secondary: darkgray;
 
-  --degrade-principale : linear-gradient(36deg, rgba(167, 2, 154, 0.7) 0%, rgba(167, 2, 154, 0) 100%);
-}
 
-/*---------------------- Generic ----------------------*/
-
-/* Mettre la ligne universelle pour le box-sizing */
-
-*,*::before, *::after{
-  box-sizing: border-box;
-}
-
-/*---------------------- Elements ----------------------*/
-
-body{
-  margin: 0;
-  font-family: var(--font-primary);
-
-}
-
-a{
-  text-decoration: none;
-  color: var(--white);
-}
-
-.hero{
-  height: 80vh;
-  background: var(--black);
-  position: relative;
-}
-
-.hero video{
-  height: 100%;
-  width: 100%;
-
-  object-fit: cover;
-
-  opacity: 0.5;
-}
-
-.hero .content{
-  width: 100%;
-  height: 100%;
-
-  color: var(--white);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-.hero::after{
-  content: "";
-  width: 100%;
-  height: 100%;
-
-  background: var(--degrade-principale);
-
-  position: absolute;
-  top:0;
-  left: 0;
-  z-index: 1;
-}
-
-.hero p, .hero a{
-  font-size: 24px;
-}
-
-h1{
-  margin: 20px;
-}
-
-h2{
-  font-family: var(--font-secondary);
-  font-size: 80px;
-}
-
-h3{
-  font-weight: bold;
-  font-size: 40px;
-}
-
-h4{
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-p{
-  font-size: 18px;
-  margin: 0;
-  text-align: center;
-}
 
 /*---------------------- Components ----------------------*/
 
-.header-principal{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5;
 
-  font-family: var(--font-secondary);
-  font-size: 18px;
-  line-height: 43px;
 
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 150px;
 
-  background: var(--black);
-  color: var(--white);
-}
 
-section.interet{
-  background-image: url("../images/bg-interet.jpg");
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-section.interet div.conteneur{
-  max-width: 1400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-div.cartes{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
-div.carte{
-  background-color: var(--white);
-  width: 352px;
-  height: 367px;
-  margin: 42px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
 
-div.carte img{
-  width: 50%;
-  height: 50%;
-}
-
-section.citation{
-  background-image: url("../images/bg-citation.jpg");
-  background-size: contain;
-  background-attachment: fixed;
-  height:450px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--white);
-
-}
-
-section.citation div.conteneur{
-  max-width: 1400px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-section.citation h3{
-  text-transform: uppercase;
-}
-
-footer.footer-principal{
-  width: 100%;
-  height: 144px;
-  background: var(--black);
-  color: var(--white);
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

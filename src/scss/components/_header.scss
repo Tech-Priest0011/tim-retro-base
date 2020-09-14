@@ -1,0 +1,18 @@
+.header-principal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  line-height: 43px;
+
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 150px;
+
+  background: var(--black);
+  color: var(--white);
+}
